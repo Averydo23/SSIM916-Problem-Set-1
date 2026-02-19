@@ -29,12 +29,12 @@ SSIM916-Problem-Set-1/
 
 ## Key Insights from EDA
 Exploratory Data Analysis revealed several critical drivers of churn:
-**Tenure**: New customers are the most vulnerable, specifically within the first 20 months of service.
-**Service & Value**: Fiber optic users are primary churn drivers, typically associated with high monthly charges (Median ~$80).
-**Add-on Services**: A lack of add-ons services like OnlineSecurity and TechSupport strongly correlates with higher churn volumes.
-**Contract**: Month-to-month contract status is the primary driver influencing a customer's decision to leave the service.
-**Payment Method**: Electronic Check is a critical risk factor, accounting for over 1,071 churners, triple the volume of any other payment method.
-**Demographics**: Customers with no partners or dependents show significantly higher attrition rates, while gender is a neutral factor.
+- **Tenure**: New customers are the most vulnerable, specifically within the first 20 months of service.
+- **Service & Value**: Fiber optic users are primary churn drivers, typically associated with high monthly charges (Median ~$80).
+- **Add-on Services**: A lack of add-ons services like OnlineSecurity and TechSupport strongly correlates with higher churn volumes.
+- **Contract**: Month-to-month contract status is the primary driver influencing a customer's decision to leave the service.
+- **Payment Method**: Electronic Check is a critical risk factor, accounting for over 1,071 churners, triple the volume of any other payment method.
+- **Demographics**: Customers with no partners or dependents show significantly higher attrition rates, while gender is a neutral factor.
 
 ## Features Selected (7)
 Based on correlation matrix and EDA findings:
@@ -50,7 +50,7 @@ Based on correlation matrix and EDA findings:
 | ROC-AUC | 0.8373 | 0.8127 |
 
 **Final model: Logistic Regression** 
-Selected based on superior Recall (0.80), directly aligned with the business objective of minimising missed churners.
+Logistic Regression: selected for superior Recall (0.80 vs 0.51), F1-Score (0.62 vs 0.55), and ROC-AUC (0.84 vs 0.81), directly aligned with the business objective of minimising missed churners.
 
 ## Requirements
 pandas, numpy, scikit-learn, matplotlib, seaborn
