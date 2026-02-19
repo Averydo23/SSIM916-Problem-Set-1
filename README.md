@@ -1,5 +1,5 @@
 # SSIM916 - Problem Set 1
-# Project: Telco Customer Churn Prediction & Analysis
+## Project: Telco Customer Churn Prediction & Analysis
 
 ## Overview
 This project predicts customer churn in the telecom industry using the IBM Telco Customer Churn dataset. This project aims to predict customer churn for a telecommunications provider using machine learning. By identifying high-risk customers, the business can proactively implement retention strategies to reduce revenue loss. 
@@ -13,11 +13,13 @@ Identify customers at risk of churning early enough for the retention team to in
 - **Target variable**: Churn (binary: Yes/No, 26.5% churn rate)
 
 ## Project Structure
+```
 SSIM916-Problem-Set-1/
 ├── data/
 │   ├── Problem_Set_1.ipynb
 │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 └── README.md
+```
 
 ## How to Run
 1. Clone the repository
